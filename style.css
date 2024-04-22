@@ -1,107 +1,85 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
 }
-body{
-    background: #fff; 
+body {
+  background: #fff;
 }
-.container{
-    background: #a7a5a5;
-    color: #fff;
-    width: 500px;
-    height: 60vh;
-    margin-top: 125px;
-    margin-left: 450px;
-    border-radius: 10px;  
+.container {
+  background: #a7a5a5;
+  color: #fff;
+  width: 500px;
+  height: 60vh;
+  margin-top: 125px;
+  margin-left: 450px;
+  border-radius: 10px;
 }
-.pallet{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 40px;  
+.pallet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
 }
-.pallet h1{
-    color: #050505;
-    padding-bottom: 30px;
+.pallet h1 {
+  color: #050505;
+  padding-bottom: 30px;
 }
-.pallet .color{
-    width: 350px;
-    height: 35px;
-    background: #fff;
-    color: #333;
-    border-radius: 20px;
-    margin-bottom: 50px;
-    transition: 0.2s;
+.pallet .color {
+  width: 350px;
+  height: 35px;
+  background: #fff;
+  color: #333;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  transition: 0.2s;
 }
-.code-display{
-    display: flex;
-    gap: 100px;
-    padding-bottom: 70px;
-    color: #333; 
-    text-align: center;
+.code-display {
+  display: flex;
+  gap: 100px;
+  padding-bottom: 70px;
+  color: #333;
+  text-align: center;
 }
-.code-display div{
-    width: 100px;
-    height: 50px;
+.code-display div {
+  width: 100px;
+  height: 50px;
 }
-.code-display h4{
-    color: #eee;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: 750;
-    text-decoration: underline;
+.code-display h4 {
+  color: #eee;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 750;
+  text-decoration: underline;
 }
-.pallet button{
-    background: #fff;
-    color: #333;
-    width: 100px;
-    padding: 10px 15px;
-    border: 0;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 600px){
-    .container{
-        width: 300px;
-        height: 50vh; 
-        margin-left: 30px;
-    }
-    .pallet h1{
-        font-size: 30px;
-    }
-    .pallet .color{
-        width: 200px;
-    }
-    .code-display{
-        gap: 50px;
-    }
-    .code-display h3{
-        font-size: 15px;
-    }
+.pallet button {
+  background: #fff;
+  color: #333;
+  width: 100px;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
-
-
-
-/*
-const button = document.querySelector("button");
-
-function color(){
-    const randomNumber = Math.floor(Math.random() * 0xffffff);
-    const randomCode = "#" + randomNumber.toString(16);
-    console.log(randomCode);
-    return randomCode;
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 300px;
+    height: 50vh;
+    margin-left: 30px;
+  }
+  .pallet h1 {
+    font-size: 30px;
+  }
+  .pallet .color {
+    width: 200px;
+  }
+  .code-display {
+    gap: 50px;
+  }
+  .code-display h3 {
+    font-size: 15px;
+  }
 }
-
-button.addEventListener("click", () => {
-    hex_code = color();
-    document.getElementById("box1").innerText = hex_code;
-    document.getElementById("box2").style.backgroundColor = hex_code;
-})
-
-    
-*/
